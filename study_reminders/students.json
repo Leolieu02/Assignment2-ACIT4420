@@ -16,11 +16,5 @@
         "email": "charlie@example.com",
         "course": "Physics",
         "preferred_time": "17:30"
-    },
-    {
-        "name": "David",
-        "email": "david@example.com",
-        "course": "Biology",
-        "preferred_time": "13:17"
     }
 ]
