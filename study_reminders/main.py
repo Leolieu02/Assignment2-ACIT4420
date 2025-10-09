@@ -33,7 +33,7 @@ def main():
 
     # Example: Remove latest student 
     manager.remove_student("Esther")
-    manager.save_students() # removing student to JSON file too
+    # manager.save_students() # removing student to JSON file too
 
 
     # Example: Updated student list 
