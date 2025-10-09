@@ -3,18 +3,24 @@
         "name": "Alice",
         "email": "alice@example.com",
         "course": "Computer Science",
-        "preferred_time": "08:00 AM"
+        "preferred_time": "16:52"
     },
     {
         "name": "Bob",
         "email": "bob@example.com",
         "course": "Mathematics",
-        "preferred_time": "09:00 AM"
+        "preferred_time": "09:00"
     },
     {
         "name": "Charlie",
         "email": "charlie@example.com",
         "course": "Physics",
-        "preferred_time": "07:30 AM"
+        "preferred_time": "17:30"
+    },
+    {
+        "name": "David",
+        "email": "david@example.com",
+        "course": "Biology",
+        "preferred_time": "13:17"
     }
 ]

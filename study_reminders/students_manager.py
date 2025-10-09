@@ -14,9 +14,9 @@ class StudentsManager:
                 return json.load(file)
         except FileNotFoundError:
             return [
-                {"name": "Alice", "email": "alice@example.com", "course": "Computer Science", "preferred_time": "08:00 AM"},
-                {"name": "Bob", "email": "bob@example.com", "course": "Mathematics", "preferred_time": "09:00 AM"},
-                {"name": "Charlie", "email": "charlie@example.com", "course": "Physics", "preferred_time": "07:30 AM"}
+                {"name": "Alice", "email": "alice@example.com", "course": "Computer Science", "preferred_time": "08:00"},
+                {"name": "Bob", "email": "bob@example.com", "course": "Mathematics", "preferred_time": "09:00"},
+                {"name": "Charlie", "email": "charlie@example.com", "course": "Physics", "preferred_time": "07:30"}
             ]
 
     def add_student(self, name, email, course, preferred_time="08:00 AM"):
