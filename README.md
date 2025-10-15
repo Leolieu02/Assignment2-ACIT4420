@@ -8,7 +8,7 @@ The system can run in two modes:
 
 ## Installation
 
-Inside the **Assignment 2** folder, install the package locally using the command:
+Inside the **Assignment2-ACIT4420** folder, install the package locally using the command:
 - pip install -e .
 
 ## Usage
