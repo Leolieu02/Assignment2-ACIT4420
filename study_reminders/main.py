@@ -26,18 +26,16 @@ def main():
     # Example: Updated student list 
     print("Updated Students List:")
     print("")
-    # manager.save_students() # saving the new student to JSON file (creates a new file)
     manager.list_students()
     print("--------------------------------------------")
 
 
     # Example: Remove latest student 
     manager.remove_student("Esther")
-    # manager.save_students() # removing student to JSON file too
 
 
     # Example: Updated student list 
-    print("Updated deleted Students List:")
+    print("Updated list after deleted student:")
     print("")
     manager.list_students()
     print("--------------------------------------------")
@@ -50,21 +48,26 @@ def main():
     print("2. Start daily scheduler")
     choice = input("Choose an option (1 or 2): ")
 
+    # Run manual (aka for testing)
     if choice == "1":
         print("Sending reminders now...")
+        # Loop through all students and send reminders manually 
         for student in manager.get_students():
             reminder = generate_reminder(student['name'], student['course'])
             send_reminder(student['email'], reminder)
             log_reminder(student, reminder)
         print("\nReminders sent and logged successfully.")
 
+    # Run scheduler (for actual use)
     elif choice == "2":
         print("Starting daily scheduler...")
         try:
+            # Try to actually run the scheduler
             schedule_reminders(manager, generate_reminder, send_reminder, log_reminder)
         except KeyboardInterrupt:
+            # Stop the scheduler when Ctrl+C is pressed
             print("\nScheduler stopped.")
-
+    # Print error message for invalid input
     else:
         print("Invalid choice. Exiting.")
 
