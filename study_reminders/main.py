@@ -26,7 +26,7 @@ def main():
     # Example: Updated student list 
     print("Updated Students List:")
     print("")
-    manager.save_students() # saving the new student to JSON file
+    # manager.save_students() # saving the new student to JSON file (creates a new file)
     manager.list_students()
     print("--------------------------------------------")
 
